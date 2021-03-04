@@ -1,0 +1,24 @@
+{
+    "name": "irfa/php-hari-libur",
+    "description": "\"Plugin ini berfungsi untuk mengecek hari libur nasional\"",
+    "type": "package",
+    "license": "MIT",
+    "version": "v1.0",
+    "homepage": "https://github.com/irfaardy/php-hari-libur",
+    "keywords": ["laravel", "holidays", "plugin", "hari libur", "hris","plugin hari libur", "php"],
+    "authors": [
+        {
+            "name": "Irfa Ardiansyah",
+            "email": "irfa.backend@protonmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "ext-json": "*",
+    },
+    "autoload": {
+            "psr-4": {
+                "Irfa\\HariLibur\\": "src/"
+            }
+    }
+}

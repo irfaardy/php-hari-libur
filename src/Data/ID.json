@@ -1,0 +1,53 @@
+{
+	"holidays":[
+				{
+					"date" : "2021-01-01",
+					"description":"Tahun Baru 2021 Masehi"
+				},{
+					"date" : "2021-02-12",
+					"description":"Tahun Baru Imlek 2572 Kongzili"
+				},{
+					"date" : "2021-03-11",
+					"description":"Isra' Mi'raj Nabi Muhammad SAW"
+				},{
+					"date" : "2021-03-14",
+					"description":"Hari Suci Nyepi Tahun Baru Saka 1943"
+				},{
+					"date" : "2021-04-02",
+					"description":"Wafat Isa Al Masih"
+				},{
+					"date" : "2021-05-13",
+					"description":"Kenaikan Isa Al Masih"
+				},{
+					"date" : "2021-05-13",
+					"description":"Cuti Bersama Hari Raya Idul fitri 1442 Hijriah"
+				},{
+					"date" : "2021-05-14",
+					"description":"Cuti Bersama Hari Raya Idul fitri 1442 Hijriah"
+				},{
+					"date" : "2021-05-26",
+					"description":"Hari Raya Waisak 2565"
+				},{
+					"date" : "2021-06-01",
+					"description":"Hari Lahir Pancasila"
+				},{
+					"date" : "2021-07-20",
+					"description":"Hari Raya Idul Adha 1442 Hijriah"
+				},{
+					"date" : "2021-08-10",
+					"description":"Tahun Baru Islam 1443 Hijriah"
+				},{
+					"date" : "2021-08-17",
+					"description":"Hari Kemerdekaan Republik Indonesia"
+				},{
+					"date" : "2021-09-19",
+					"description":"Maulid Nabi Muhammad SAW"
+				},{
+					"date" : "2021-12-24",
+					"description":"Cuti Bersama Hari Raya Natal"
+				},{
+					"date" : "2021-12-25",
+					"description":"Hari Raya Natal"
+				}
+			]
+}
