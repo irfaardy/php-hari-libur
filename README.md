@@ -1,5 +1,5 @@
 
-# 📅PHP Hari Libur
+# 📅 PHP Hari Libur
 [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S52P7SN)
 
 Plugin ini berfungsi untuk mengecek hari libur nasional, untuk sekarang baru libur nasional di Indonesia.
@@ -52,6 +52,8 @@ config/irfa/hari_libur.php
 ```
 /vendor/irfa/php-hari-libur/config/hari_libur.php
 ```
+
+Jika anda menggunakan framework Laravel anda bisa mengubah atau menambah tanggal libur di `resources/data-libur-nasional/XX.json` sedangkan jika anda menggunakan PHP Native atau non-Laravel anda bisa mengubahnya di `vendor/irfa/php-hari-libur/src/Data/XX.json`
 
 <hr><h2>Usage</h2>
 
