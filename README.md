@@ -59,15 +59,31 @@ config/irfa/hari_libur.php
 
 <h3>Memanggil class HariLibur</h3>
 
+<h3>PHP Native / Non-Laravel</h3>
+
 ```
-use Irfa\HariLibur\Facades\HariLibur;
+use Irfa\HariLibur\Func\HariLibur;
 ```
 
 Jika di Laravel bisa juga menggunakan ini
 
 ```php
+use Irfa\HariLibur\Facades\HariLibur;
+atau
 use HariLibur;
 ```
+
+<h3>
+    Jika menggunakan PHP Native atau non-Laravel untuk contoh penggunaannya seperti ini
+</h3>
+
+```php
+use Irfa\HariLibur\Func\HariLibur;
+....
+$libur = new HariLibur();
+var_dump($libur->date("17-08-2021")->isHoliday());
+```
+
 
 <h3>Mengecek hari libur nasional pada tanggal yang dipilih</h3>
 
