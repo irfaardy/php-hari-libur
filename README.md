@@ -157,7 +157,7 @@ composer remove irfa/php-hari-libur
 setelah remove berhasil ada langkah tambahan jika menggunakan framework Laravel:
 
 1. buka `config/app.php`
-2. cari `provider` lalu hapus `Irfa\HariLibur\HariLiburServiceProvider::class`
+2. cari `providers` lalu hapus `Irfa\HariLibur\HariLiburServiceProvider::class`
 3. cari `aliases` lalu hapus `'HariLibur' => Irfa\HariLibur\Facades\HariLibur::class,`
 4. Simpan.
 
@@ -168,7 +168,7 @@ setelah remove berhasil ada langkah tambahan jika menggunakan framework Laravel:
 3. Push to the branch (`git push origin your-branch`)
 4. Create a new Pull Request ` your-branch -> master`
 
-if you found bug or error, please post here https://github.com/irfaardy/php-sn-generator/issues so that they can be maintained together.
+if you found bug or error, please post here https://github.com/irfaardy/php-hari-libur/issues so that they can be maintained together.
 
 
 
