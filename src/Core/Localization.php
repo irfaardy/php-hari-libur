@@ -1,6 +1,8 @@
 <?php
 /* 
 	Author: Irfa Ardiansyah <irfa.backend@protonmail.com>
+    version: 1.0
+    https://github.com/irfaardy/php-hari-libur
 */
 namespace Irfa\HariLibur\Core;
 
@@ -36,7 +38,14 @@ class Localization
     */
 	public function holidayData($array = true)
 	{
-		$file = __DIR__.'../../Data/'.$this->lang().'.json';
+		$published_file = __DIR__.'../../../../../../resources/data-libur-nasional/'.$this->lang().'.json';
+		if(file_exists($published_file))
+		{
+			$file = $published_file;
+		} else{
+			$file = __DIR__.'../../Data/'.$this->lang().'.json';
+		}
+		
 		$this->checkFile($file);
 		$arr = file_get_contents($file);
 		if($this->isJson($arr))
