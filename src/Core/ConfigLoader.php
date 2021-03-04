@@ -8,9 +8,9 @@ namespace Irfa\HariLibur\Core;
 class ConfigLoader
 {
 	/**
-     * Method ini berfungsi untuk set tanggal dari config.
+     * Method ini berfungsi memuat file konfigurasi region.
      *
-     * @return boolean
+     * @return string
     */
 	public function region()
 	{

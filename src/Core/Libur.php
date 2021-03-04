@@ -1,6 +1,8 @@
 <?php
 /* 
 	Author: Irfa Ardiansyah <irfa.backend@protonmail.com>
+    version: 1.0
+    https://github.com/irfaardy/php-hari-libur
 */
 namespace Irfa\HariLibur\Core;
 
