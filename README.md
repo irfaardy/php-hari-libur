@@ -123,18 +123,42 @@ if(HariLibur::date("17-08-2021")->isWeekend())
 }
 ```
 
-
-
 <h3>Mengecek hari libur pada tanggal yang dipilih</h3>
 
 Fungsi ini merupakan gabungan dari fungsi diatas.
+Digunakan untuk mengecek tanggal merah dan akhir pekan.
 
 ```php
-HariLibur::date("17-08-2021")->isOffDay();
+HariLibur::date("17-08-2021")->isDayOff();
 //return true
 ```
 
+<h3>Mengambil hari libur nasional sebelum dan setelahnya</h3>
+
+```php
+HariLibur::date("17-08-2021")->nextHoliday(); 
+// mengambil data hari libur setelah tanggal 17-03-2021
+HariLibur::date("17-08-2021")->prevHoliday(); 
+// mengambil data hari libur setelah tanggal 17-03-2021
+```
+
+<h3>Contoh Penggunaan</h3>
+
+```php
+$date = HariLibur::date("17-08-2021");
+//mengambil data hari libur sebelum tangal 17-08-2021
+foreach ($date->nextHoliday() as $hariLibur) {
+    echo "Tanggal: ".$hariLibur->date." Deskripsi: ".$hariLibur->description."<br>";
+  }
+//mengambil data hari libur sesudah tangal 17-08-2021
+foreach ($date->prevHoliday() as $hariLibur) {
+    echo "Tanggal: ".$hariLibur->date." Deskripsi: ".$hariLibur->description."<br>";
+  }
+```
+
 <h3>Mengambil data hari libur</h3>
+
+Mengambil semua data hari libur nasional sesuai regional yang diatur di konfigurasi.
 
 ```php
 HariLibur::get();
@@ -157,10 +181,10 @@ HariLibur::date("17-08-2021")->getInfo();
 //return Hari Kemerdekaan Republik Indonesia
 ```
 
-<h3>Mengatur Regional </h3>
+<h3>Mengatur Regional secara terprogram</h3>
 
 ```php
-HariLibur::regional("ID")->date("17-08-2021")->getInfo();
+HariLibur::regional("ID")->get();
 ```
 
 <hr>
@@ -206,3 +230,4 @@ Jika anda menemukan bug atau error silahkan posting disini https://github.com/ir
 
 ***
 
+Sumber libur nasional Indonesia : https://kalenderindonesia.com/libur/masehi/2021#
