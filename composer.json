@@ -3,7 +3,7 @@
     "description": "\"Plugin ini berfungsi untuk mengecek hari libur nasional\"",
     "type": "package",
     "license": "MIT",
-    "version": "v1.0",
+    "version": "v1.1",
     "homepage": "https://github.com/irfaardy/php-hari-libur",
     "keywords": ["laravel", "holidays", "plugin", "hari libur", "hris","plugin hari libur", "php"],
     "authors": [
