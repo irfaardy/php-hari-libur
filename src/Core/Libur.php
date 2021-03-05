@@ -12,6 +12,22 @@ class Libur extends Localization
 {
 	private $holidays;
 	
+	protected function getNextHolidays($date)
+	{
+		$dt = new DateHelpers();
+		$this->populateHoliday();
+
+		return $dt->greaterThanDate($date, $this->holidays);
+	}
+
+	protected function getPrevHolidays($date)
+	{
+		$dt = new DateHelpers();
+		$this->populateHoliday();
+
+		return (object) $dt->lessThanDate($date, $this->holidays);
+	}
+
 	protected function checkHoliday($date)
 	{
 		$this->populateHoliday();

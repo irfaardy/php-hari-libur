@@ -53,7 +53,7 @@ class HariLibur extends Libur
      *
      * @return boolean
     */
-    public function isOffDay()
+    public function isDayOff()
     {
         $this->checkDate();
         return $this->checkOffDay($this->date);
@@ -89,7 +89,16 @@ class HariLibur extends Libur
         $this->setRegion($region);
         return $this;
     }
-
+    public function nextHoliday()
+    {
+        $next = $this->getnextHolidays($this->date);
+        return $next;
+    }
+    public function prevHoliday()
+    {
+        $prev = $this->getPrevHolidays($this->date);
+        return $prev;
+    }
     /**
      * Method ini berfungsi untuk mengecek tanggal sudah diisi apa belum
      *

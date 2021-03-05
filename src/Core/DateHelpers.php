@@ -20,4 +20,30 @@ class DateHelpers
 		return $day;
 	}
 
+	public function greaterThanDate($neddle, $haystack)
+	{
+		$b =[];
+		foreach ($haystack as $k => $v) {
+			if(strtotime($k) > strtotime($neddle)){
+				$b[] = (object) ['date' => $k, 'description' => $v];
+			}
+		}
+
+		return $b;
+		
+	}
+
+	public function lessThanDate($neddle, $haystack)
+	{
+		$b =[];
+		foreach ($haystack as $k => $v) {
+			if(strtotime($k) < strtotime($neddle)){
+				$b[] = (object) ['date' => $k, 'description' => $v];
+			}
+		}
+
+		return $b;
+		
+	}
+
 }
