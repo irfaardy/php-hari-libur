@@ -1,6 +1,6 @@
 
 # 📅 PHP Hari Libur
-[![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S52P7SN)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e94175abb35f041a77da/maintainability)](https://codeclimate.com/github/irfaardy/php-hari-libur/maintainability) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/irfaardy/php-hari-libur/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/irfaardy/php-hari-libur/?branch=master) [![Support me](https://img.shields.io/badge/Support-Buy%20me%20a%20coffee-yellow.svg?style=flat-square)](https://www.buymeacoffee.com/OBaAofN) [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S52P7SN)
 
 Plugin ini berfungsi untuk mengecek hari libur nasional, untuk sekarang baru libur nasional di Indonesia.
 
@@ -231,3 +231,6 @@ Jika anda menemukan bug atau error silahkan posting disini https://github.com/ir
 ***
 
 Sumber libur nasional Indonesia : https://kalenderindonesia.com/libur/masehi/2021#
+
+<b>License</b>
+[![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE)
