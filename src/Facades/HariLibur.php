@@ -1,7 +1,7 @@
 <?php
 /* 
 	Author: Irfa Ardiansyah <irfa.backend@protonmail.com>
-    version: 1.0
+    version: 1.1
     https://github.com/irfaardy/php-hari-libur
 */
 namespace Irfa\HariLibur\Facades;

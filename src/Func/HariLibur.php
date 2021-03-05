@@ -1,7 +1,7 @@
 <?php
 /* 
 	Author: Irfa Ardiansyah <irfa.backend@protonmail.com>
-    version: 1.0
+    version: 1.1
     https://github.com/irfaardy/php-hari-libur
 */
 namespace Irfa\HariLibur\Func;
@@ -89,16 +89,29 @@ class HariLibur extends Libur
         $this->setRegion($region);
         return $this;
     }
+
+    /**
+     * Method ini berfungsi untuk menampilkan data libur sebelum tanggal yang telah di atur di parameter date.
+     *
+     * @return object
+    */
     public function nextHoliday()
     {
         $next = $this->getnextHolidays($this->date);
         return $next;
     }
+
+    /**
+     * Method ini berfungsi untuk menampilkan data libur setelah tanggal yang telah di atur di parameter date.
+     *
+     * @return object
+    */
     public function prevHoliday()
     {
         $prev = $this->getPrevHolidays($this->date);
         return $prev;
     }
+
     /**
      * Method ini berfungsi untuk mengecek tanggal sudah diisi apa belum
      *
