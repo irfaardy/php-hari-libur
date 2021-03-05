@@ -232,5 +232,5 @@ Jika anda menemukan bug atau error silahkan posting disini https://github.com/ir
 
 Sumber libur nasional Indonesia : https://kalenderindonesia.com/libur/masehi/2021#
 
-<b>License</b>
+<b>License</b><br>
 [![GitHub license](https://img.shields.io/github/license/irfaardy/encrypt-file-laravel?style=flat-square)](https://github.com/irfaardy/encrypt-file-laravel/blob/master/LICENSE)
