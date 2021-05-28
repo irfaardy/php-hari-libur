@@ -38,7 +38,7 @@ class Localization
     */
 	public function holidayData($array = true)
 	{
-		$published_file = __DIR__.'../../../../../../resources/data-libur-nasional/'.$this->lang().'.json';
+		$published_file = __DIR__.'../../../../../../resources/irfa/php-hari-libur/'.$this->lang().'.json';
 		if(file_exists($published_file))
 		{
 			$file = $published_file;
