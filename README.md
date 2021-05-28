@@ -11,8 +11,15 @@ Hari libur pada plugin ini akan selalu di update tiap tahun.
     composer require irfa/php-hari-libur
 
 >You can get Composer [ here]( https://getcomposer.org/download/)
+>
 
-***
+<h3>Update this Package</h3>
+
+```
+composer update irfa/php-hari-libur
+```
+
+
 
 
 <h2>🛠️ Laravel Setup </h2>

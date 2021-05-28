@@ -38,13 +38,19 @@ class Localization
     */
 	public function holidayData($array = true)
 	{
-		$published_file = __DIR__.'../../../../../../resources/irfa/php-hari-libur/'.$this->lang().'.json';
+		if(function_exists('resource_path'))
+		{
+			$published_file = resource_path('irfa/php-hari-libur/'.$this->lang().'.json');
+		}else{
+			$published_file = __DIR__.'../../../../../../resources/irfa/php-hari-libur/'.$this->lang().'.json';
+		}
 		if(file_exists($published_file))
 		{
 			$file = $published_file;
 		} else{
-			$file = __DIR__.'../../Data/'.$this->lang().'.json';
+			$file = __DIR__.'/'.'../../Data/'.$this->lang().'.json';
 		}
+		// dd($file);
 		
 		$this->checkFile($file);
 		$arr = file_get_contents($file);
